@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Sidebar</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar-toggle">
+            <div class="sidebar-logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <!-- Sidebar Navigation -->
+            <ul class="sidebar-nav p-0">
+                <li class="sidebar-header">
+                    Navigation
+                </li>
+                <li class="sidebar-item">
+                    <a href="#dashboard" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard" aria-expanded="true" aria-controls="dashboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m20 8l-6-5.26a3 3 0 0 0-4 0L4 8a3 3 0 0 0-1 2.26V19a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-8.75A3 3 0 0 0 20 8m-6 12h-4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1Zm5-1a1 1 0 0 1-1 1h-2v-5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v5H6a1 1 0 0 1-1-1v-8.75a1 1 0 0 1 .34-.75l6-5.25a1 1 0 0 1 1.32 0l6 5.25a1 1 0 0 1 .34.75Z" />
+                        </svg>
+                        <span>Dashboard</span>
+                        <span class="badge badge-secondary" style="background: rgb(10 207 151); margin-left:48%;">
+                            5
+                        </span>
+                    </a>
+                </li>
+                <ul id="dashboard" class="sidebar-dropdown collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Analytics</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Ecommerce</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Projects</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">CRM</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">E-Wallet</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-header">
+                    Apps
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
+                        </svg>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19 8h-1V5a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v12a1 1 0 0 0 .62.92A.84.84 0 0 0 3 18a1 1 0 0 0 .71-.29l2.81-2.82H8v1.44a3 3 0 0 0 3 3h6.92l2.37 2.38A1 1 0 0 0 21 22a.84.84 0 0 0 .38-.08A1 1 0 0 0 22 21V11a3 3 0 0 0-3-3M8 11v1.89H6.11a1 1 0 0 0-.71.29L4 14.59V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3h-5a3 3 0 0 0-3 3m12 7.59l-1-1a1 1 0 0 0-.71-.3H11a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1Z" />
+                        </svg>
+                        <span>Chat</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m15.29 10.29l-2.78 2.78A2.09 2.09 0 0 0 12 13a2 2 0 0 0-2 2a2.09 2.09 0 0 0 .07.51l-.78.78a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l.78-.78A2.09 2.09 0 0 0 12 17a2 2 0 0 0 2-2a2.09 2.09 0 0 0-.07-.51l2.78-2.78a1 1 0 0 0-1.42-1.42M12 4A10 10 0 0 0 2 14a9.91 9.91 0 0 0 1.69 5.56a1 1 0 0 0 1.66-1.12a8 8 0 1 1 13.3 0a1 1 0 0 0 .27 1.39a1 1 0 0 0 .56.17a1 1 0 0 0 .83-.44A9.91 9.91 0 0 0 22 14A10 10 0 0 0 12 4" />
+                        </svg>
+                        <span>CRM</span>
+                        <span class="badge badge-secondary" style="background: rgb(250 92 124); margin-left:61%;">
+                            New
+                        </span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#ecommerce" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#ecommerce" aria-expanded="true" aria-controls="ecommerce">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M22 7.82a1.25 1.25 0 0 0 0-.19l-2-5A1 1 0 0 0 19 2H5a1 1 0 0 0-.93.63l-2 5a1.25 1.25 0 0 0 0 .19A.58.58 0 0 0 2 8a4 4 0 0 0 2 3.4V21a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-9.56A4 4 0 0 0 22 8a.58.58 0 0 0 0-.18M13 20h-2v-4h2Zm5 0h-3v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5H6v-8a4 4 0 0 0 3-1.38a4 4 0 0 0 6 0A4 4 0 0 0 18 12Zm0-10a2 2 0 0 1-2-2a1 1 0 0 0-2 0a2 2 0 0 1-4 0a1 1 0 0 0-2 0a2 2 0 0 1-4 .15L5.68 4h12.64L20 8.15A2 2 0 0 1 18 10" />
+                        </svg>
+                        <span>Ecommerce</span>
+                    </a>
+                </li>
+                <ul id="ecommerce" class="sidebar-dropdown collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Product</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Product Details</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Order</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Order Details</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Customer</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Shopping Cart</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Check Out</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Seller</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#email" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#email" aria-expanded="true" aria-controls="email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z" />
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                </li>
+                <ul id="email" class="sidebar-dropdown collapse" data-bs-parent="#email">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Inbox</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Read Mail</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#projects" class="sidebar-link" class="sidebar-link collapsed has-dropdown"
+                        data-bs-toggle="collapse" data-bs-target="#projects" aria-expanded="true"
+                        aria-controls="projects">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21 6h-4V5a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v1H3a1 1 0 0 0-1 1v4a3 3 0 0 0 1 2.22V19a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5.78A3 3 0 0 0 22 11V7a1 1 0 0 0-1-1M9 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1H9Zm10 14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5h2v1a1 1 0 0 0 2 0v-1h6v1a1 1 0 0 0 2 0v-1h2Zm1-8a1 1 0 0 1-1 1h-2v-1a1 1 0 0 0-2 0v1H9v-1a1 1 0 0 0-2 0v1H5a1 1 0 0 1-1-1V8h16Z" />
+                        </svg>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <ul id="projects" class="sidebar-dropdown collapse" data-bs-parent="#projects">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">List</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Details</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Gantt</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Create Project</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M2.88 16.88a3 3 0 0 0 0 4.24a3 3 0 0 0 4.24 0a3 3 0 0 0-4.24-4.24m2.83 2.83a1 1 0 0 1-1.42-1.42a1 1 0 0 1 1.42 0a1 1 0 0 1 0 1.42M5 12a1 1 0 0 0 0 2a5 5 0 0 1 5 5a1 1 0 0 0 2 0a7 7 0 0 0-7-7m0-4a1 1 0 0 0 0 2a9 9 0 0 1 9 9a1 1 0 0 0 2 0a11.08 11.08 0 0 0-3.22-7.78A11.08 11.08 0 0 0 5 8m10.61.39A15.11 15.11 0 0 0 5 4a1 1 0 0 0 0 2a13 13 0 0 1 13 13a1 1 0 0 0 2 0a15.11 15.11 0 0 0-4.39-10.61" />
+                        </svg>
+                        <span>Social Feed</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#tasks" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#tasks" aria-expanded="true" aria-controls="tasks">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M15 14H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2m0-4h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2m2-6h-1.18A3 3 0 0 0 13 2h-2a3 3 0 0 0-2.82 2H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m-7 1a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm8 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6h1a1 1 0 0 1 1 1Z" />
+                        </svg>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <ul id="tasks" class="sidebar-dropdown collapse" data-bs-parent="#tasks">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">List</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Details</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Kanban Board</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M14 12.5h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2m5-7h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
+                        </svg>
+                        <span>File Manager</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-header">
+                    Custom
+                </li>
+                <li class="sidebar-item">
+                    <a href="#pages" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#pages" aria-expanded="true" aria-controls="pages">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M16 20H8a3 3 0 0 1-3-3V7a1 1 0 0 0-2 0v10a5 5 0 0 0 5 5h8a1 1 0 0 0 0-2m5-11.06a1.31 1.31 0 0 0-.06-.27v-.09a1.07 1.07 0 0 0-.19-.28l-6-6a1.07 1.07 0 0 0-.28-.19h-.09L14.06 2H10a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V9zm-6-3.53L17.59 8H16a1 1 0 0 1-1-1ZM19 15a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3v3a3 3 0 0 0 3 3h3Z" />
+                        </svg>
+                        <span>Pages</span>
+                    </a>
+                </li>
+                <ul id="pages" class="sidebar-dropdown collapse" data-bs-parent="#pages">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Profile</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Profile 2</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Invoice</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">FAQ</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Pricing</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Maintenance</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#authenication" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                            data-bs-target="#authenication" aria-expanded="true" aria-controls="authenication">
+                            <span>Authenication</span>
+                        </a>
+                        <ul id="authenication" class="sidebar-dropdown collapse" data-bs-parent="#authenication">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Login</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Login 2</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Register</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Register 2</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Logout</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Logout 2</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Recover Password</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Recover Password 2</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Lock Screen</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Lock Screen 2</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Confirm Mail</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Confirm Mail 2</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+
+                    <li class="sidebar-item">
+                        <a href="#error" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                            data-bs-target="#error" aria-expanded="true" aria-controls="error">
+                            <span>Error</span>
+                        </a>
+                        <ul id="error" class="sidebar-dropdown collapse" data-bs-parent="#error">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Error 404</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Error 404-alt</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Error 500</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Starter Page</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">With Preloader</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Timeline</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21.41 8.64v-.05a10 10 0 0 0-18.78 0s0 0 0 .05a9.86 9.86 0 0 0 0 6.72v.05a10 10 0 0 0 18.78 0s0 0 0-.05a9.86 9.86 0 0 0 0-6.72M4.26 14a7.82 7.82 0 0 1 0-4h1.86a16.73 16.73 0 0 0 0 4Zm.82 2h1.4a12.15 12.15 0 0 0 1 2.57A8 8 0 0 1 5.08 16m1.4-8h-1.4a8 8 0 0 1 2.37-2.57A12.15 12.15 0 0 0 6.48 8M11 19.7A6.34 6.34 0 0 1 8.57 16H11Zm0-5.7H8.14a14.36 14.36 0 0 1 0-4H11Zm0-6H8.57A6.34 6.34 0 0 1 11 4.3Zm7.92 0h-1.4a12.15 12.15 0 0 0-1-2.57A8 8 0 0 1 18.92 8M13 4.3A6.34 6.34 0 0 1 15.43 8H13Zm0 15.4V16h2.43A6.34 6.34 0 0 1 13 19.7m2.86-5.7H13v-4h2.86a14.36 14.36 0 0 1 0 4m.69 4.57a12.15 12.15 0 0 0 1-2.57h1.4a8 8 0 0 1-2.4 2.57M19.74 14h-1.86a16.16 16.16 0 0 0 .12-2a16.28 16.28 0 0 0-.12-2h1.86a7.82 7.82 0 0 1 0 4" />
+                        </svg>
+                        <span>Landing</span>
+                        <span class="badge badge-secondary" style="background: gray; margin-left:50%;">
+                            New
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#layout" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#layout" aria-expanded="true" aria-controls="layout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M10 5a1 1 0 1 0 1 1a1 1 0 0 0-1-1M6 5a1 1 0 1 0 1 1a1 1 0 0 0-1-1m8 0a1 1 0 1 0 1 1a1 1 0 0 0-1-1m6-4H4a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h16a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3m1 19a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9h18Zm0-11H3V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1Z" />
+                        </svg>
+                        <span>Layout</span>
+                    </a>
+                </li>
+                <ul id="layout" class="sidebar-dropdown collapse" data-bs-parent="#layout">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Horizontal</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Detached</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Full View</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Fullscreen View</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Hover Menu</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Compact</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Icon View</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-header">
+                    Components
+                </li>
+                <li class="sidebar-item">
+                    <a href="#basisUi" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#basisUi" aria-expanded="true" aria-controls="basisUi">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20.49 7.52a.19.19 0 0 1 0-.08a.17.17 0 0 1 0-.07v-.09l-.06-.15a.48.48 0 0 0-.09-.11l-.09-.08h-.05l-3.94-2.49l-3.72-2.3a.85.85 0 0 0-.29-.15h-.08a.82.82 0 0 0-.27 0h-.1a1.13 1.13 0 0 0-.33.13L4 6.78l-.09.07l-.09.08l-.1.07l-.05.06l-.06.15v.15a.69.69 0 0 0 0 .2v8.73a1 1 0 0 0 .47.85l7.5 4.64l.15.06h.08a.86.86 0 0 0 .52 0h.08l.15-.06L20 17.21a1 1 0 0 0 .47-.85V7.63s.02-.07.02-.11M12 4.17l1.78 1.1l-5.59 3.46l-1.79-1.1Zm-1 15l-5.5-3.36V9.42l5.5 3.4Zm1-8.11l-1.91-1.15l5.59-3.47l1.92 1.19Zm6.5 4.72L13 19.2v-6.38l5.5-3.4Z" />
+                        </svg>
+                        <span>Basic UI</span>
+                    </a>
+                </li>
+                <ul id="basisUi" class="sidebar-dropdown collapse" data-bs-parent="#basisUi">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Accordation & Collapse</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Alerts</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Avatars</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Badges</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Breadcrumb</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Buttons</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Cards</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Carousel</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Dropdowm</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Embed Video</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Grid</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">List Group</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Modals</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Notifications</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Offcanvas</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Placeholder</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Pagination</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Popovers</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Progress</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Ribbons</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Spinners</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Tabs</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Tooltips</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Typography</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Utilities</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#extendedUi" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#extendedUi" aria-expanded="true" aria-controls="extendedUi">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19 2H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3m-9 2h4v3.13l-1.45-1a1 1 0 0 0-1.1 0l-1.45 1Zm10 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3v5a1 1 0 0 0 .53.88a1 1 0 0 0 1-.05L12 8.2l2.45 1.63A1 1 0 0 0 16 9V4h3a1 1 0 0 1 1 1Z" />
+                        </svg>
+                        <span>Extended UI</span>
+                    </a>
+                </li>
+                <ul id="extendedUi" class="sidebar-dropdown collapse" data-bs-parent="#extendedUi">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Dragula</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Range Slider</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Ratings</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Scrollbar</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Scrollspy</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Treeview</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m2.5 8.86l9 5.2a1 1 0 0 0 1 0l9-5.2A1 1 0 0 0 22 8a1 1 0 0 0-.5-.87l-9-5.19a1 1 0 0 0-1 0l-9 5.19A1 1 0 0 0 2 8a1 1 0 0 0 .5.86M12 4l7 4l-7 4l-7-4Zm8.5 7.17L12 16l-8.5-4.87a1 1 0 0 0-1.37.37a1 1 0 0 0 .37 1.36l9 5.2a1 1 0 0 0 1 0l9-5.2a1 1 0 0 0 .37-1.36a1 1 0 0 0-1.37-.37Zm0 4L12 20l-8.5-4.87a1 1 0 0 0-1.37.37a1 1 0 0 0 .37 1.36l9 5.2a1 1 0 0 0 1 0l9-5.2a1 1 0 0 0 .37-1.36a1 1 0 0 0-1.37-.37Z" />
+                        </svg>
+                        <span>
+                            Widgets
+                        </span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#icons" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#icons" aria-expanded="true" aria-controls="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 12a1 1 0 1 0 1 1a1 1 0 0 0-1-1m9.71-2.36a10 10 0 0 0-19.4 0a9.75 9.75 0 0 0 0 4.72a10 10 0 0 0 7.3 7.34a9.67 9.67 0 0 0 4.7 0a10 10 0 0 0 7.31-7.31a9.75 9.75 0 0 0 0-4.72ZM12 4a8 8 0 0 1 7.41 5H4.59A8 8 0 0 1 12 4m-8 8a8.26 8.26 0 0 1 .07-1H6v2H4.07A8.26 8.26 0 0 1 4 12m5 7.41A8 8 0 0 1 4.59 15H7a2 2 0 0 1 2 2Zm4 .52a8.26 8.26 0 0 1-1 .07a8.26 8.26 0 0 1-1-.07V18h2Zm.14-3.93h-2.28A4 4 0 0 0 8 13.14V11h8v2.14A4 4 0 0 0 13.14 16M15 19.41V17a2 2 0 0 1 2-2h2.41A8 8 0 0 1 15 19.41M19.93 13H18v-2h1.93a8.26 8.26 0 0 1 .07 1a8.26 8.26 0 0 1-.07 1" />
+                        </svg>
+                        <span>Icons</span>
+                    </a>
+                </li>
+                <ul id="icons" class="sidebar-dropdown collapse" data-bs-parent="#icons">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Remix Icons</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Material Design</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Unicons</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Lucide</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#charts" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#charts" aria-expanded="true" aria-controls="charts">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 6a1 1 0 0 0-1 1v10a1 1 0 0 0 2 0V7a1 1 0 0 0-1-1m-5 6a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1m10-2a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0v-6a1 1 0 0 0-1-1m2-8H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3m1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z" />
+                        </svg>
+                        <span>Charts</span>
+                    </a>
+                </li>
+                <ul id="charts" class="sidebar-dropdown collapse" data-bs-parent="#charts">
+                    <li class="sidebar-item">
+                        <a href="#apexchart" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                            data-bs-target="#apexchart" aria-expanded="true" aria-controls="apexchart">
+                            Apex Charts
+                        </a>
+                    </li>
+                    <ul id="apexchart" class="sidebar-dropdown collapse" data-bs-parent="#apexchart">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Area</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Bar</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Bubble</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">CandleStick</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Column</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Heatmap</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Line</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Mixed</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Timeline</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Boxplot</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Treemap</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Pie</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Radar</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Radialbar</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Scatter</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Polar Area</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Sparklines</a>
+                        </li>
+                    </ul>
+
+                    <li class="sidebar-item">
+                        <a href="#chartJS" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                            data-bs-target="#chartJS" aria-expanded="true" aria-controls="chartJS">
+                            ChartJS
+                        </a>
+                    </li>
+                    <ul id="chartJS" class="sidebar-dropdown collapse" data-bs-parent="#chartJS">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Area</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Bar</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Line</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Other</a>
+                        </li>
+                    </ul>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Britecharts</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">sparkline</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#forms" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#forms" aria-expanded="true" aria-controls="forms">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M9 12h6a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1m1-6h4v4h-4Zm11 4h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2m-2-2h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2M3 8h2a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2m0 4h2a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2m18 2H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2m-8 4H3a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2" />
+                        </svg>
+                        <span>Forms</span>
+                    </a>
+                </li>
+                <ul id="forms" class="sidebar-dropdown collapse" data-bs-parent="#forms">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Basic Elementa</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Form Advanced</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Validation</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Wizard</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">File uploads</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Editors</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#tables" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#tables" aria-expanded="true" aria-controls="tables">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21 2H3a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1M8 20H4v-4h4Zm0-6H4v-4h4Zm0-6H4V4h4Zm6 12h-4v-4h4Zm0-6h-4v-4h4Zm0-6h-4V4h4Zm6 12h-4v-4h4Zm0-6h-4v-4h4Zm0-6h-4V4h4Z" />
+                        </svg>
+                        <span>Tables</span>
+                    </a>
+                </li>
+                <ul id="tables" class="sidebar-dropdown collapse" data-bs-parent="#tables">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Basic Tables</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Data Tables</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#maps" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#maps" aria-expanded="true" aria-controls="maps">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M18 4.48a8.45 8.45 0 0 0-12 12l5.27 5.28a1 1 0 0 0 1.42 0L18 16.43a8.45 8.45 0 0 0 0-11.95M16.57 15L12 19.59L7.43 15a6.46 6.46 0 1 1 9.14 0M9 7.41a4.32 4.32 0 0 0 0 6.1a4.31 4.31 0 0 0 7.36-3a4.24 4.24 0 0 0-1.26-3.05A4.3 4.3 0 0 0 9 7.41m4.69 4.68a2.33 2.33 0 1 1 .67-1.63a2.33 2.33 0 0 1-.72 1.63Z" />
+                        </svg>
+                        <span>Maps</span>
+                    </a>
+                </li>
+                <ul id="maps" class="sidebar-dropdown collapse" data-bs-parent="#maps">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Google Map</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Vector Map</a>
+                    </li>
+                </ul>
+
+                <li class="sidebar-item">
+                    <a href="#multilevel" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#multilevel" aria-expanded="true" aria-controls="multilevel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M14 12.5h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2m5-7h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
+                        </svg>
+                        <span>Multi Level</span>
+                    </a>
+                </li>
+                <ul id="multilevel" class="sidebar-dropdown collapse" data-bs-parent="#multilevel">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Second Level</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Third Level</a>
+                    </li>
+                </ul>
+
+            </ul>
+
+            <div class="help-box text-white text-center">
+                <a href="#" class="float-end close-btn text-white">
+                    <p style="text-align: end;"><i class="fa fa-close"></i></p>
+                    <img src="images/help-icon.svg" height="90" alt="helpher-icon">
+                    <h5 class="mt-3">Unlimited Access</h5>
+                    <p class="mb-3">Upgrade to plan to get access to unlimited reports</p>
+                    <a href="#" class="btn btn-secondary btn-sm">Upgrade</a>
+                </a>
+            </div>
+        </aside>
+        <!-- Sidebar Ends -->
+
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand" style="display: flex; justify-content: space-between; border: none;">
+                <div class="d-flex align-items-center gap-lg-2 gap-1">
+                    <button class="toggler-btn" type="button">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <form class="d-flex gap: 0;">
+                        <div class="input-group">
+                            <span class="fa fa-search" style="margin-top: 3%; margin-left: 4%;"></span>
+                            <input type="search" class="form-control dropdown-toggle" placeholder="Search..."
+                                id="top-seacrh" style="background-color: #f0f3f8; border: none;">
+                            <button class="input-group-text btn btn-primary"
+                                style="border-radius: none; background-color: #737df4;">Search</button>
+                        </div>
+                    </form>
+
+                </div>
+
+
+                <ul class="navbar-nav d-flex align-items-center" style="margin-left: 10%;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/images.jpg" alt="" height="12">
+                            English
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">
+                                    <img src="images/germany.png" alt="" height="12">
+                                    German</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img src="images/italy.png" alt="" height="12">
+                                    Italian</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img src="images/spain.png" alt="" height="12">
+                                    Spanish</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <img src="images/russia.png" alt="" height="12">
+                                    Russian</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a href="" class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" role="button"
+                            aria-expanded="false">
+                            <i class="fa fa-bell"></i>
+                            <span claa="noti-icon-badge"></span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown d-none d-sm-inline-block">
+                        <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M7 11.5a4.5 4.5 0 1 1 0-9a4.5 4.5 0 0 1 0 9m0 10a4.5 4.5 0 1 1 0-9a4.5 4.5 0 0 1 0 9m10-10a4.5 4.5 0 1 1 0-9a4.5 4.5 0 0 1 0 9m0 10a4.5 4.5 0 1 1 0-9a4.5 4.5 0 0 1 0 9M7 9.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m0 10a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m10-10a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m0 10a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5" />
+                            </svg>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg p-0"
+                            style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px,72px);"
+                            data-proper-placement="bottom-end">
+
+                            <div class="p-2" style="padding: 0.75rem; width: 375px; max-width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="images/slack.png" alt="slack" height="25">
+                                            <span>Slack</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="images/github.png" alt="Github" height="25">
+                                            <span>GitHub</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="images/dribble.jpg" alt="dribbble" height="25">
+                                            <span>Dribbble</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row g-0">
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="images/bigbucket.png" alt="bitbucket" height="25">
+                                            <span>Bitbucket</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="images/dropbox.png" alt="dropbox" height="25">
+                                            <span>Dropbox</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="images/g-suite.png" alt="G Suite" height="25">
+                                            <span>G-Suite</span>
+                                        </a>
+
+                                    </div>
+                                </div> <!-- end row-->
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+                                <path fill="currentColor"
+                                    d="M512.5 390.6c-29.9 0-57.9 11.6-79.1 32.8c-21.1 21.2-32.8 49.2-32.8 79.1s11.7 57.9 32.8 79.1c21.2 21.1 49.2 32.8 79.1 32.8s57.9-11.7 79.1-32.8c21.1-21.2 32.8-49.2 32.8-79.1s-11.7-57.9-32.8-79.1a110.96 110.96 0 0 0-79.1-32.8m412.3 235.5l-65.4-55.9c3.1-19 4.7-38.4 4.7-57.7s-1.6-38.8-4.7-57.7l65.4-55.9a32.03 32.03 0 0 0 9.3-35.2l-.9-2.6a442.5 442.5 0 0 0-79.6-137.7l-1.8-2.1a32.12 32.12 0 0 0-35.1-9.5l-81.2 28.9c-30-24.6-63.4-44-99.6-57.5l-15.7-84.9a32.05 32.05 0 0 0-25.8-25.7l-2.7-.5c-52-9.4-106.8-9.4-158.8 0l-2.7.5a32.05 32.05 0 0 0-25.8 25.7l-15.8 85.3a353.4 353.4 0 0 0-98.9 57.3l-81.8-29.1a32 32 0 0 0-35.1 9.5l-1.8 2.1a445.9 445.9 0 0 0-79.6 137.7l-.9 2.6c-4.5 12.5-.8 26.5 9.3 35.2l66.2 56.5c-3.1 18.8-4.6 38-4.6 57c0 19.2 1.5 38.4 4.6 57l-66 56.5a32.03 32.03 0 0 0-9.3 35.2l.9 2.6c18.1 50.3 44.8 96.8 79.6 137.7l1.8 2.1a32.12 32.12 0 0 0 35.1 9.5l81.8-29.1c29.8 24.5 63 43.9 98.9 57.3l15.8 85.3a32.05 32.05 0 0 0 25.8 25.7l2.7.5a448.3 448.3 0 0 0 158.8 0l2.7-.5a32.05 32.05 0 0 0 25.8-25.7l15.7-84.9c36.2-13.6 69.6-32.9 99.6-57.5l81.2 28.9a32 32 0 0 0 35.1-9.5l1.8-2.1c34.8-41.1 61.5-87.4 79.6-137.7l.9-2.6c4.3-12.4.6-26.3-9.5-35m-412.3 52.2c-97.1 0-175.8-78.7-175.8-175.8s78.7-175.8 175.8-175.8s175.8 78.7 175.8 175.8s-78.7 175.8-175.8 175.8" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m21.067 11.857l-.642-.388zm-8.924-8.924l-.388-.642zM21.25 12A9.25 9.25 0 0 1 12 21.25v1.5c5.937 0 10.75-4.813 10.75-10.75zM12 21.25A9.25 9.25 0 0 1 2.75 12h-1.5c0 5.937 4.813 10.75 10.75 10.75zM2.75 12A9.25 9.25 0 0 1 12 2.75v-1.5C6.063 1.25 1.25 6.063 1.25 12zm12.75 2.25A5.75 5.75 0 0 1 9.75 8.5h-1.5a7.25 7.25 0 0 0 7.25 7.25zm4.925-2.781A5.746 5.746 0 0 1 15.5 14.25v1.5a7.247 7.247 0 0 0 6.21-3.505zM9.75 8.5a5.747 5.747 0 0 1 2.781-4.925l-.776-1.284A7.246 7.246 0 0 0 8.25 8.5zM12 2.75a.384.384 0 0 1-.268-.118a.285.285 0 0 1-.082-.155c-.004-.031-.002-.121.105-.186l.776 1.284c.503-.304.665-.861.606-1.299c-.062-.455-.42-1.026-1.137-1.026zm9.71 9.495c-.066.107-.156.109-.187.105a.285.285 0 0 1-.155-.082a.384.384 0 0 1-.118-.268h1.5c0-.717-.571-1.075-1.026-1.137c-.438-.059-.995.103-1.299.606z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M3 21v-5h2v3h3v2zm13 0v-2h3v-3h2v5zM3 8V3h5v2H5v3zm16 0V5h-3V3h5v5z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle arrow-none nav-user px-2 show custom-nav"
+                            data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="true">
+                            <span class="account-user-avatar">
+                                <img src="images/avatar-1.jpg" alt="user-image" width="32" class="rounded-circle">
+                            </span>
+                            <span class="d-lg-flex flex-column gap-1 d-none">
+                                <h6 class="my-0">Dominic Keller</h6>
+                                <h6 class="my-0 fw-normal">Founder</h6>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated profile-dropdown show"
+                            style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(0px, 72px);"
+                            data-popper-placement="bottom-end">
+                            <!-- item-->
+                            <div class=" dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Welcome !</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item">
+                                <i class="mdi mdi-account-circle me-1"></i>
+                                <span>My Account</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item">
+                                <i class="mdi mdi-account-edit me-1"></i>
+                                <span>Settings</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item">
+                                <i class="mdi mdi-lifebuoy me-1"></i>
+                                <span>Support</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item">
+                                <i class="mdi mdi-lock-outline me-1"></i>
+                                <span>Lock Screen</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="#" class="dropdown-item">
+                                <i class="mdi mdi-logout me-1"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <main class="p-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-body p-0">
+                                <div class="row g-0">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="card rounded-0 shadow-none m-0">
+                                            <div class="card-body text-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z" />
+                                                </svg>
+                                                <h3>
+                                                    <span>29</span>
+                                                </h3>
+                                                <p class="text-muted font-15 mb-0">Total Projects</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="card rounded-0 shadow-none m-0">
+                                            <div class="card-body text-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z" />
+                                                </svg>
+                                                <h3>
+                                                    <span>715</span>
+                                                </h3>
+                                                <p class="text-muted font-15 mb-0">Total Tasks</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="card rounded-0 shadow-none m-0">
+                                            <div class="card-body text-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z" />
+                                                </svg>
+                                                <h3>
+                                                    <span>31</span>
+                                                </h3>
+                                                <p class="text-muted font-15 mb-0">Members</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="card rounded-0 shadow-none m-0">
+                                            <div class="card-body text-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z" />
+                                                </svg>
+                                                <h3>
+                                                    <span>93%</span>
+                                                </h3>
+                                                <p class="text-muted font-15 mb-0">Productivity</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="row" style="margin: 0% 1.6%;">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center"
+                            style="background: white; border: none;">
+                            <h5 class="header-title" style="font-size: 19px;">Project Status</h5>
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: gray;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m0-6c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m0 12c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2" />
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item">Weekly Report</a>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item">Monthly Report</a>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item">Action</a>
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item">Settings</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body pt-0">
+                            <div class="mt-3 mb-4 chartjs-chart" style="height: 204px;">
+                                <img src="images/circle.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="row text-center mt-2 py-2" style="font-size: 14px;">
+                            <div class="col-sm-4">
+                                <div class="my-2 my-sm-0">
+                                    <svg style="color: #21cf97;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M3.4 18L2 16.6l7.4-7.45l4 4L18.6 8H16V6h6v6h-2V9.4L13.4 16l-4-4z" />
+                                    </svg>
+                                    <h3 class="fw-normal">
+                                        <span style="font-size: 22px;">64%</span>
+                                    </h3>
+                                    <p class="text-muted mb-0">Completed</p>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="my-2 my-sm-0">
+                                    <svg style="color: #727ef6;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M16 18v-2h2.6l-5.2-5.15l-4 4L2 7.4L3.4 6l6 6l4-4l6.6 6.6V12h2v6z" />
+                                    </svg>
+                                    <h3 class="fw-normal">
+                                        <span style="font-size: 22px;">26%</span>
+                                    </h3>
+                                    <p class="text-muted mb-0"> In-progress</p>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="my-2 my-sm-0" >
+                                    <svg style="color:#fa617c;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M16 18v-2h2.6l-5.2-5.15l-4 4L2 7.4L3.4 6l6 6l4-4l6.6 6.6V12h2v6z" />
+                                    </svg>
+                                    <h3 class="fw-normal">
+                                        <span style="font-size: 22px;">10%</span>
+                                    </h3>
+                                    <p class="text-muted mb-0"> Behind</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="card" style="height: 100%;">
+                        <div class="card-header d-flex justify-content-between align-items-center"
+                            style="background: white; border: none;">
+                            <h4 class="header-title">Tasks</h4>
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: gray;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m0-6c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m0 12c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2" />
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">Weekly Report</a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">Monthly Report</a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">Settings</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-header bg-light-lighten border-top border-bottom border-light py-1 text-center"
+                            style="font-size: 14px; background: white;">
+                            <p class="m-0"><b>107</b> Tasks completed out of 195</p>
+                        </div>
+                        <div class="card-body pt-2">
+                            <div class="table-responsive">
+                                <table class="table table-centered table-nowrap table-hover mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h5 class="font-14 my-1"><a href="#" class="text-body"
+                                                        style="font-size: 12px;">Coffee detail page - Main Page</a></h5>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Due in 3
+                                                    days</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Status</span>
+                                                <br>
+                                                <span class="badge badge-warning-lighten"
+                                                    style="font-size: 10px; color: #ffc767; background: #fff9ef;">In-progress</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Assigned
+                                                    to</span>
+                                                <h5 class="font-14 mt-1 fw-normal" style="font-size: 12px;">Logan R.
+                                                    Cohn</h5>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Total time
+                                                    spend</span>
+                                                <h5 class="font-14 mt-1 fw-normal" style="font-size: 12px;">3h 20min
+                                                </h5>
+                                            </td>
+                                            <td class="table-action" style="width: 90px;">
+                                                <a href="#" class="action-icon" style="color: gray;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83l3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z" />
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="action-icon" style="color: gray;"    >
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z" />
+                                                    </svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 class="font-14 my-1"><a href="#" class="text-body"
+                                                        style="font-size: 12px;">Drinking bottle graphics</a></h5>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Due in 27
+                                                    days</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Status</span>
+                                                <br>
+                                                <span class="badge badge-danger-lighten"
+                                                    style="font-size: 12px; color: #fa5c7c; background: #ffeff2;">Outdated</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Assigned
+                                                    to</span>
+                                                <h5 class="font-14 mt-1 fw-normal" style="font-size: 12px;">Jerry F.
+                                                    Powell</h5>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Total time
+                                                    spend</span>
+                                                <h5 class="font-14 mt-1 fw-normal" style="font-size: 12px;">12h 21min
+                                                </h5>
+                                            </td>
+                                            <td class="table-action" style="width: 90px;">
+                                                <a href="#" class="action-icon" style="color: gray;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83l3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z" />
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="action-icon" style="color: gray;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z" />
+                                                    </svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 class="font-14 my-1"><a href="#" class="text-body"
+                                                        style="font-size: 12px;">App design and development</a></h5>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Due in 7
+                                                    days</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Status</span>
+                                                <br>
+                                                <span class="badge badge-success-lighten"
+                                                    style="font-size: 12px; color: #1ad39e; background: #e7faf5;">Completed</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Assigned
+                                                    to</span>
+                                                <h5 class="font-14 mt-1 fw-normal" style="font-size: 12px;">Scot M.
+                                                    Smith</h5>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Total time
+                                                    spend</span>
+                                                <h5 class="font-14 mt-1 fw-normal" style="font-size: 12px;">78h 05min
+                                                </h5>
+                                            </td>
+                                            <td class="table-action" style="width: 90px;">
+                                                <a href="#" class="action-icon" style="color: gray;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83l3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z" />
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="action-icon" style="color: gray;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z" />
+                                                    </svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 class="font-14 my-1"><a href="#" class="text-body"
+                                                        style="font-size: 12px;">Poster illustation design</a></h5>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Due in 5
+                                                    days</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Status</span>
+                                                <br>
+                                                <span class="badge badge-warning-lighten"
+                                                    style="font-size: 12px; color: #ffc767; background: #fff9ef;">In-progress</span>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Assigned
+                                                    to</span>
+                                                <h5 class="font-14 mt-1 fw-normal" style="font-size: 12px;">John P.
+                                                    Ritter</h5>
+                                            </td>
+                                            <td>
+                                                <span class="text-muted font-13" style="font-size: 12px;">Total time
+                                                    spend</span>
+                                                <h5 class="font-14 mt-1 fw-normal" style="font-size: 12px;">26h 58min
+                                                </h5>
+                                            </td>
+                                            <td class="table-action" style="width: 90px;">
+                                                <a href="#" class="action-icon" style="color: gray;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83l3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z" />
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="action-icon" style="color: gray;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z" />
+                                                    </svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div> <!-- end table-responsive-->
+
+                        </div> <!-- end card body-->
+                    </div> <!-- end card -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const toggler = document.querySelector(".toggler-btn");
+        toggler.addEventListener("click", function () {
+            document.querySelector("#sidebar").classList.toggle("collapsed");
+        });
+    </script>
+</body>
+
+</html>
